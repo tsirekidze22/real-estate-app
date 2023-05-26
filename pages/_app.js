@@ -2,6 +2,7 @@ import Router from "next/router";
 import Head from "next/head";
 import NProgress from "nprogress";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Layout from "../components/Layout";
 
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider>
         <Layout>
           <Component {...pageProps} />
+          <Analytics />
         </Layout>
       </ChakraProvider>
     </>
