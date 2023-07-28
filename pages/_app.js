@@ -30,9 +30,9 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider>
         <Layout>
           <Component {...pageProps} />
-          <Analytics/>
         </Layout>
       </ChakraProvider>
+      <Analytics/>
     </>
   );
 }
